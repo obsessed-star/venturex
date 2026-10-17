@@ -1,0 +1,15 @@
+{
+  "name": "venturex-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Startup funding and secondary-market simulator",
+  "scripts": {
+    "start": "node serve.cjs",
+    "test": "node --test tests/engine.test.cjs tests/funding.test.cjs",
+    "bundle": "node bundle.cjs",
+    "check": "node --check dist/engine.js && node --check dist/app.js && node --check serve.cjs && node --check bundle.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+VentureX.html
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

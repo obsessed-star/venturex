@@ -1,0 +1,2187 @@
+{
+  "version": 1,
+  "seed": 88,
+  "day": 0,
+  "_rngState": 88,
+  "_nextOrder": 1,
+  "_nextTrade": 66,
+  "_nextNews": 3,
+  "_botsEnabled": false,
+  "_externalNetCash": 0,
+  "_initialTotalCash": 8490000000,
+  "startups": [
+    {
+      "symbol": "A",
+      "name": "A",
+      "sector": "Yapay zekâ",
+      "color": "#4c84ff",
+      "price": 1200,
+      "previousClose": 1200,
+      "history": [],
+      "companyCash": 500000000,
+      "revenue": 54000000,
+      "expenses": 62000000,
+      "users": 17500,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 480000000,
+      "funding": {
+        "target": 480000000,
+        "raised": 480000000,
+        "price": 1200,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 37,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 1200,
+      "_baseRevenue": 54000000,
+      "_baseUsers": 17500,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "B",
+      "name": "B",
+      "sector": "Temiz enerji",
+      "color": "#36dba0",
+      "price": 1800,
+      "previousClose": 1800,
+      "history": [],
+      "companyCash": 740000000,
+      "revenue": 72000000,
+      "expenses": 58000000,
+      "users": 31000,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 720000000,
+      "funding": {
+        "target": 720000000,
+        "raised": 720000000,
+        "price": 1800,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 17,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 1800,
+      "_baseRevenue": 72000000,
+      "_baseUsers": 31000,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "C",
+      "name": "C",
+      "sector": "Sağlık teknolojisi",
+      "color": "#b396ff",
+      "price": 950,
+      "previousClose": 950,
+      "history": [],
+      "companyCash": 400000000,
+      "revenue": 44000000,
+      "expenses": 69000000,
+      "users": 9200,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 380000000,
+      "funding": {
+        "target": 380000000,
+        "raised": 380000000,
+        "price": 950,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 31,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 950,
+      "_baseRevenue": 44000000,
+      "_baseUsers": 9200,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "D",
+      "name": "D",
+      "sector": "Finans teknolojisi",
+      "color": "#f5ba58",
+      "price": 1450,
+      "previousClose": 1450,
+      "history": [],
+      "companyCash": 600000000,
+      "revenue": 61000000,
+      "expenses": 60000000,
+      "users": 42000,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 580000000,
+      "funding": {
+        "target": 580000000,
+        "raised": 580000000,
+        "price": 1450,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 24,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 1450,
+      "_baseRevenue": 61000000,
+      "_baseUsers": 42000,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "E",
+      "name": "E",
+      "sector": "Lojistik",
+      "color": "#58cbed",
+      "price": 800,
+      "previousClose": 800,
+      "history": [],
+      "companyCash": 340000000,
+      "revenue": 39000000,
+      "expenses": 47000000,
+      "users": 12500,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 320000000,
+      "funding": {
+        "target": 320000000,
+        "raised": 320000000,
+        "price": 800,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 23,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 800,
+      "_baseRevenue": 39000000,
+      "_baseUsers": 12500,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "F",
+      "name": "F",
+      "sector": "Oyun ve eğlence",
+      "color": "#ed779b",
+      "price": 1600,
+      "previousClose": 1600,
+      "history": [],
+      "companyCash": 660000000,
+      "revenue": 83000000,
+      "expenses": 77000000,
+      "users": 67000,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 640000000,
+      "funding": {
+        "target": 640000000,
+        "raised": 640000000,
+        "price": 1600,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 29,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 1600,
+      "_baseRevenue": 83000000,
+      "_baseUsers": 67000,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "G",
+      "name": "G",
+      "sector": "Tarım teknolojisi",
+      "color": "#b7d66c",
+      "price": 1050,
+      "previousClose": 1050,
+      "history": [],
+      "companyCash": 440000000,
+      "revenue": 43000000,
+      "expenses": 52000000,
+      "users": 7300,
+      "totalShares": 1000000,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 420000000,
+      "funding": {
+        "target": 420000000,
+        "raised": 420000000,
+        "price": 1050,
+        "offeredShares": 400000,
+        "soldShares": 400000,
+        "round": 1,
+        "open": false
+      },
+      "growthBp": 19,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 1050,
+      "_baseRevenue": 43000000,
+      "_baseUsers": 7300,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    },
+    {
+      "symbol": "H",
+      "name": "H",
+      "sector": "Uzay ve robotik",
+      "color": "#f4935c",
+      "price": 1350,
+      "previousClose": 1350,
+      "history": [],
+      "companyCash": 155009450,
+      "revenue": 21000000,
+      "expenses": 42000000,
+      "users": 4200,
+      "totalShares": 700007,
+      "founderShares": 600000,
+      "status": "active",
+      "totalRaised": 135009450,
+      "funding": {
+        "target": 540000000,
+        "raised": 135009450,
+        "price": 1350,
+        "offeredShares": 400000,
+        "soldShares": 100007,
+        "round": 1,
+        "open": true
+      },
+      "growthBp": 43,
+      "sentimentBp": 0,
+      "riskBp": 0,
+      "_initialPrice": 1350,
+      "_baseRevenue": 21000000,
+      "_baseUsers": 4200,
+      "_seedCash": 20000000,
+      "_initialShares": 600000,
+      "_operatingReceived": 0,
+      "_operatingSpent": 0
+    }
+  ],
+  "accounts": [
+    {
+      "id": "user",
+      "name": "Sen",
+      "cash": 9990550,
+      "holdings": {
+        "H": 7
+      },
+      "costs": {
+        "H": 9450
+      },
+      "initialHoldings": {},
+      "initialCash": 10000000,
+      "realizedPnl": 0
+    },
+    {
+      "id": "founder-A",
+      "name": "A kurucuları",
+      "cash": 0,
+      "holdings": {
+        "A": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "A": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-A-1",
+      "name": "Değer fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-2",
+      "name": "Temkinli fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-3",
+      "name": "Uzun vade fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-4",
+      "name": "Denge fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-5",
+      "name": "Büyüme fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-6",
+      "name": "Trend fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-7",
+      "name": "Girişim fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-A-8",
+      "name": "Dinamik fonu A",
+      "cash": 70000000,
+      "holdings": {
+        "A": 50000
+      },
+      "costs": {
+        "A": 60000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "A",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-B",
+      "name": "B kurucuları",
+      "cash": 0,
+      "holdings": {
+        "B": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "B": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-B-1",
+      "name": "Değer fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-2",
+      "name": "Temkinli fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-3",
+      "name": "Uzun vade fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-4",
+      "name": "Denge fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-5",
+      "name": "Büyüme fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-6",
+      "name": "Trend fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-7",
+      "name": "Girişim fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-B-8",
+      "name": "Dinamik fonu B",
+      "cash": 40000000,
+      "holdings": {
+        "B": 50000
+      },
+      "costs": {
+        "B": 90000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "B",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-C",
+      "name": "C kurucuları",
+      "cash": 0,
+      "holdings": {
+        "C": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "C": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-C-1",
+      "name": "Değer fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-2",
+      "name": "Temkinli fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-3",
+      "name": "Uzun vade fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-4",
+      "name": "Denge fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-5",
+      "name": "Büyüme fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-6",
+      "name": "Trend fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-7",
+      "name": "Girişim fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-C-8",
+      "name": "Dinamik fonu C",
+      "cash": 82500000,
+      "holdings": {
+        "C": 50000
+      },
+      "costs": {
+        "C": 47500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "C",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-D",
+      "name": "D kurucuları",
+      "cash": 0,
+      "holdings": {
+        "D": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "D": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-D-1",
+      "name": "Değer fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-2",
+      "name": "Temkinli fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-3",
+      "name": "Uzun vade fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-4",
+      "name": "Denge fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-5",
+      "name": "Büyüme fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-6",
+      "name": "Trend fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-7",
+      "name": "Girişim fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-D-8",
+      "name": "Dinamik fonu D",
+      "cash": 57500000,
+      "holdings": {
+        "D": 50000
+      },
+      "costs": {
+        "D": 72500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "D",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-E",
+      "name": "E kurucuları",
+      "cash": 0,
+      "holdings": {
+        "E": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "E": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-E-1",
+      "name": "Değer fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-2",
+      "name": "Temkinli fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-3",
+      "name": "Uzun vade fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-4",
+      "name": "Denge fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-5",
+      "name": "Büyüme fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-6",
+      "name": "Trend fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-7",
+      "name": "Girişim fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-E-8",
+      "name": "Dinamik fonu E",
+      "cash": 90000000,
+      "holdings": {
+        "E": 50000
+      },
+      "costs": {
+        "E": 40000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "E",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-F",
+      "name": "F kurucuları",
+      "cash": 0,
+      "holdings": {
+        "F": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "F": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-F-1",
+      "name": "Değer fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-2",
+      "name": "Temkinli fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-3",
+      "name": "Uzun vade fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-4",
+      "name": "Denge fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-5",
+      "name": "Büyüme fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-6",
+      "name": "Trend fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-7",
+      "name": "Girişim fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-F-8",
+      "name": "Dinamik fonu F",
+      "cash": 50000000,
+      "holdings": {
+        "F": 50000
+      },
+      "costs": {
+        "F": 80000000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "F",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-G",
+      "name": "G kurucuları",
+      "cash": 0,
+      "holdings": {
+        "G": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "G": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-G-1",
+      "name": "Değer fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": -650,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-2",
+      "name": "Temkinli fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": -420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-3",
+      "name": "Uzun vade fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": -250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-4",
+      "name": "Denge fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": -80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-5",
+      "name": "Büyüme fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": 80,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-6",
+      "name": "Trend fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": 250,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-7",
+      "name": "Girişim fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": 420,
+      "targetShares": 50000
+    },
+    {
+      "id": "bot-G-8",
+      "name": "Dinamik fonu G",
+      "cash": 77500000,
+      "holdings": {
+        "G": 50000
+      },
+      "costs": {
+        "G": 52500000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "G",
+      "biasBp": 650,
+      "targetShares": 50000
+    },
+    {
+      "id": "founder-H",
+      "name": "H kurucuları",
+      "cash": 0,
+      "holdings": {
+        "H": 600000
+      },
+      "costs": {},
+      "initialHoldings": {
+        "H": 600000
+      },
+      "initialCash": 0,
+      "realizedPnl": 0
+    },
+    {
+      "id": "bot-H-1",
+      "name": "Değer fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": -650,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-2",
+      "name": "Temkinli fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": -420,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-3",
+      "name": "Uzun vade fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": -250,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-4",
+      "name": "Denge fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": -80,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-5",
+      "name": "Büyüme fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": 80,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-6",
+      "name": "Trend fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": 250,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-7",
+      "name": "Girişim fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": 420,
+      "targetShares": 12500
+    },
+    {
+      "id": "bot-H-8",
+      "name": "Dinamik fonu H",
+      "cash": 113125000,
+      "holdings": {
+        "H": 12500
+      },
+      "costs": {
+        "H": 16875000
+      },
+      "initialHoldings": {},
+      "initialCash": 130000000,
+      "realizedPnl": 0,
+      "botSymbol": "H",
+      "biasBp": 650,
+      "targetShares": 12500
+    }
+  ],
+  "orders": [],
+  "trades": [
+    {
+      "id": "T1",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-1",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T2",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-2",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T3",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-3",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T4",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-4",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T5",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-5",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T6",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-6",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T7",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-7",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T8",
+      "day": 0,
+      "symbol": "A",
+      "buyerId": "bot-A-8",
+      "sellerId": "company-A",
+      "quantity": 50000,
+      "price": 1200,
+      "kind": "funding"
+    },
+    {
+      "id": "T9",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-1",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T10",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-2",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T11",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-3",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T12",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-4",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T13",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-5",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T14",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-6",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T15",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-7",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T16",
+      "day": 0,
+      "symbol": "B",
+      "buyerId": "bot-B-8",
+      "sellerId": "company-B",
+      "quantity": 50000,
+      "price": 1800,
+      "kind": "funding"
+    },
+    {
+      "id": "T17",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-1",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T18",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-2",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T19",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-3",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T20",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-4",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T21",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-5",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T22",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-6",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T23",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-7",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T24",
+      "day": 0,
+      "symbol": "C",
+      "buyerId": "bot-C-8",
+      "sellerId": "company-C",
+      "quantity": 50000,
+      "price": 950,
+      "kind": "funding"
+    },
+    {
+      "id": "T25",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-1",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T26",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-2",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T27",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-3",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T28",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-4",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T29",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-5",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T30",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-6",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T31",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-7",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T32",
+      "day": 0,
+      "symbol": "D",
+      "buyerId": "bot-D-8",
+      "sellerId": "company-D",
+      "quantity": 50000,
+      "price": 1450,
+      "kind": "funding"
+    },
+    {
+      "id": "T33",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-1",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T34",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-2",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T35",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-3",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T36",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-4",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T37",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-5",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T38",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-6",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T39",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-7",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T40",
+      "day": 0,
+      "symbol": "E",
+      "buyerId": "bot-E-8",
+      "sellerId": "company-E",
+      "quantity": 50000,
+      "price": 800,
+      "kind": "funding"
+    },
+    {
+      "id": "T41",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-1",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T42",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-2",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T43",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-3",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T44",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-4",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T45",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-5",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T46",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-6",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T47",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-7",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T48",
+      "day": 0,
+      "symbol": "F",
+      "buyerId": "bot-F-8",
+      "sellerId": "company-F",
+      "quantity": 50000,
+      "price": 1600,
+      "kind": "funding"
+    },
+    {
+      "id": "T49",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-1",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T50",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-2",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T51",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-3",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T52",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-4",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T53",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-5",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T54",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-6",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T55",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-7",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T56",
+      "day": 0,
+      "symbol": "G",
+      "buyerId": "bot-G-8",
+      "sellerId": "company-G",
+      "quantity": 50000,
+      "price": 1050,
+      "kind": "funding"
+    },
+    {
+      "id": "T57",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-1",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T58",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-2",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T59",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-3",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T60",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-4",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T61",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-5",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T62",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-6",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T63",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-7",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T64",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "bot-H-8",
+      "sellerId": "company-H",
+      "quantity": 12500,
+      "price": 1350,
+      "kind": "funding"
+    },
+    {
+      "id": "T65",
+      "day": 0,
+      "symbol": "H",
+      "buyerId": "user",
+      "sellerId": "company-H",
+      "quantity": 7,
+      "price": 1350,
+      "kind": "funding"
+    }
+  ],
+  "news": [
+    {
+      "id": "N2",
+      "day": 0,
+      "symbol": "H",
+      "title": "H girişimine yeni sermaye: 7 pay ihraç edildi.",
+      "sentiment": 1
+    },
+    {
+      "id": "N1",
+      "day": 0,
+      "symbol": null,
+      "title": "VentureX açıldı: 8 girişim, sanal yatırımcılar ve gerçek emir eşleşmesi.",
+      "sentiment": 0
+    }
+  ]
+}

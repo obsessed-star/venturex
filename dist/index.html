@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f6f8" />
+    <meta
+      name="description"
+      content="Küçük girişimlere küçük tutarlarla sermaye sağlayan startup yatırım platformu simülasyonu. Girişimleri keşfet, sanal pay al ve büyümeyi izle."
+    />
+    <title>VentureX · Küçük girişimlere ortak ol</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-view="funding">
+    <a class="skip-link" href="#main-content">İçeriğe geç</a>
+    <svg
+      class="icon-sprite"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <symbol id="i-discover" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="m16 8-2.5 5.5L8 16l2.5-5.5Z" />
+        </symbol>
+        <symbol id="i-wallet" viewBox="0 0 24 24">
+          <path d="M4 7V5a2 2 0 0 1 2-2h12v4M4 7h16v14H6a2 2 0 0 1-2-2Z" />
+          <path d="M20 12h-5v4h5" />
+        </symbol>
+        <symbol id="i-founder" viewBox="0 0 24 24">
+          <path
+            d="M5 21V5l7-2 7 2v16M3 21h18M9 8h1m4 0h1M9 12h1m4 0h1M10 21v-5h4v5"
+          />
+        </symbol>
+        <symbol id="i-market" viewBox="0 0 24 24">
+          <path d="M4 3v18h17M8 15l4-5 4 3 4-7" />
+        </symbol>
+        <symbol id="i-receipt" viewBox="0 0 24 24">
+          <path d="m6 3 3 2 3-2 3 2 3-2v18l-3-2-3 2-3-2-3 2ZM9 9h6M9 13h6" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+        </symbol>
+        <symbol id="i-upload" viewBox="0 0 24 24">
+          <path d="M12 16V4m-5 5 5-5 5 5M4 16v5h16v-5" />
+        </symbol>
+        <symbol id="i-reset" viewBox="0 0 24 24">
+          <path d="M3 4v6h6M3.8 10a8.5 8.5 0 1 1 .5 7" />
+        </symbol>
+        <symbol id="i-help" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4m0 3v.1" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M4 12h16m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="i-search" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </symbol>
+      </defs>
+    </svg>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Ana gezinme">
+        <a
+          class="brand"
+          href="#kesfet"
+          data-go="funding"
+          aria-label="VentureX ana sayfa"
+          ><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M3 4h11v11H3ZM18 17h11v11H18Z" fill="currentColor" />
+            <path
+              d="M18 4h11v7M3 21v7h11"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            /></svg
+          ><span
+            >Venture<span class="brand-x">X</span
+            ><small>Girişim yatırım alanı</small></span
+          ></a
+        >
+        <div class="nav-caption">Çalışma alanın</div>
+        <nav class="nav-list">
+          <button
+            class="nav-item active"
+            data-view="funding"
+            aria-label="Girişimleri keşfet"
+          >
+            <svg class="ui-icon" aria-hidden="true">
+              <use href="#i-discover"></use></svg
+            ><span>Girişimler</span
+            ><span class="nav-count" id="fund-count">8</span>
+          </button>
+          <button class="nav-item" data-view="portfolio" aria-label="Portföy">
+            <svg class="ui-icon" aria-hidden="true">
+              <use href="#i-wallet"></use></svg
+            ><span>Portföyüm</span>
+          </button>
+          <button
+            class="nav-item"
+            data-view="founder"
+            aria-label="Girişimci paneli"
+          >
+            <svg class="ui-icon" aria-hidden="true">
+              <use href="#i-founder"></use></svg
+            ><span>Girişimci paneli</span>
+          </button>
+          <button class="nav-item" data-view="market" aria-label="Pay piyasası">
+            <svg class="ui-icon" aria-hidden="true">
+              <use href="#i-market"></use></svg
+            ><span>Pay piyasası</span>
+          </button>
+          <button class="nav-item" data-view="history" aria-label="İşlemler">
+            <svg class="ui-icon" aria-hidden="true">
+              <use href="#i-receipt"></use></svg
+            ><span>İşlemler</span>
+          </button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-guide">
+            <p>Bir girişimin büyümesini<br />yakından deneyimle.</p>
+            <button id="help-button" class="text-button">
+              <svg class="ui-icon" aria-hidden="true">
+                <use href="#i-help"></use>
+              </svg>
+              Simülasyon rehberi
+            </button>
+          </div>
+          <div class="profile">
+            <span class="avatar">S</span
+            ><span
+              ><strong>Sanal yatırımcı</strong
+              ><small>Simülasyon hesabı</small></span
+            ><span class="status-dot"></span>
+          </div>
+        </div>
+      </aside>
+      <main id="main-content">
+        <header class="topbar">
+          <div class="breadcrumb">
+            Yatırım alanı <span>/</span> <strong id="view-title">Piyasa</strong>
+          </div>
+          <div class="topbar-right">
+            <span class="simulation-badge"><i></i> Sanal yatırım</span
+            ><button
+              id="save-button"
+              class="icon-button"
+              aria-label="Simülasyonu JSON dosyası olarak indir"
+              title="Kaydı indir"
+            >
+              <svg class="ui-icon" aria-hidden="true">
+                <use href="#i-download"></use>
+              </svg></button
+            ><button
+              id="import-button"
+              class="icon-button"
+              aria-label="Simülasyon kaydı yükle"
+              title="Kaydı yükle"
+            >
+              <svg class="ui-icon" aria-hidden="true">
+                <use href="#i-upload"></use>
+              </svg></button
+            ><button
+              id="reset-button"
+              class="icon-button"
+              aria-label="Simülasyonu sıfırla"
+              title="Sıfırla"
+            >
+              <svg class="ui-icon" aria-hidden="true">
+                <use href="#i-reset"></use>
+              </svg></button
+            ><input
+              id="import-file"
+              type="file"
+              accept="application/json,.json"
+              hidden
+            />
+          </div>
+        </header>
+        <div class="main-content">
+          <div class="page-heading">
+            <div>
+              <h1 id="page-heading">Girişim piyasası<span>.</span></h1>
+              <p id="page-subtitle">
+                Bir sonraki büyük fikre, ilk adımında ortak ol.
+              </p>
+            </div>
+            <div class="simulation-controls">
+              <div class="day-label">
+                <span class="status-dot"></span
+                ><span>Gün <strong id="day-value">1</strong></span>
+              </div>
+              <button id="advance-button" class="button secondary">
+                +1 gün</button
+              ><button id="play-button" class="button play">
+                <span id="play-icon">▶</span
+                ><span id="play-label">Başlat</span></button
+              ><label class="speed-label"
+                ><span class="sr-only">Simülasyon hızı</span
+                ><select id="speed-select">
+                  <option value="1800">1×</option>
+                  <option value="900">2×</option>
+                  <option value="450">4×</option>
+                </select></label
+              >
+            </div>
+          </div>
+          <div class="overview-grid" id="overview"></div>
+          <div id="legacy-notice" class="legacy-notice" hidden>
+            Eski simülasyon kaydın ve yatırımların korundu. Sekiz açık küçük
+            girişim kampanyasıyla yeni modeli denemek için üstteki ↺ düğmesinden
+            yeni simülasyon başlatabilirsin.
+          </div>
+          <section id="market-view" class="view-panel" hidden>
+            <div class="market-layout">
+              <section class="panel watchlist">
+                <div class="panel-heading">
+                  <h2>Girişimler <span class="muted-count">8</span></h2>
+                  <span class="tiny-label">Sanal piyasa</span>
+                </div>
+                <div class="watchlist-columns">
+                  <span>Girişim</span><span>Fiyat / Değişim</span>
+                </div>
+                <div id="startup-list"></div>
+                <div class="watchlist-footer">
+                  <span class="status-dot"></span> Bot emirleriyle eşleşen
+                  fiyatlar
+                </div>
+              </section>
+              <section class="panel chart-panel">
+                <div id="chart-company" class="chart-company"></div>
+                <div class="chart-toolbar">
+                  <div
+                    class="segmented"
+                    role="group"
+                    aria-label="Grafik aralığı"
+                  >
+                    <button data-range="30" class="active">30 gün</button
+                    ><button data-range="90">90 gün</button
+                    ><button data-range="all">Tümü</button>
+                  </div>
+                  <div
+                    class="chart-types segmented"
+                    role="group"
+                    aria-label="Grafik türü"
+                  >
+                    <button
+                      data-chart="candle"
+                      class="active"
+                      title="Mum grafiği"
+                      aria-label="Mum grafiği"
+                    >
+                      ╫</button
+                    ><button
+                      data-chart="line"
+                      title="Çizgi grafiği"
+                      aria-label="Çizgi grafiği"
+                    >
+                      ⌁
+                    </button>
+                  </div>
+                </div>
+                <div class="ohlc" id="chart-ohlc"></div>
+                <div class="chart-wrap" id="chart-wrap">
+                  <svg
+                    id="price-chart"
+                    viewBox="0 0 780 350"
+                    role="img"
+                    aria-label="Seçili girişimin sanal fiyat grafiği"
+                  ></svg>
+                  <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+                </div>
+                <div class="chart-bottom">
+                  <span
+                    ><i class="chart-live-dot"></i> Sentetik piyasa verisi</span
+                  ><span id="chart-volume"></span>
+                </div>
+                <div
+                  class="market-tabs"
+                  role="group"
+                  aria-label="Piyasa ayrıntıları"
+                >
+                  <button class="active" data-market-tab="book">
+                    Emir defteri</button
+                  ><button data-market-tab="trades">Son işlemler</button
+                  ><button data-market-tab="company">Şirket bilgileri</button>
+                </div>
+                <div id="market-details" class="market-details"></div>
+              </section>
+              <aside class="trade-column">
+                <section class="panel order-panel">
+                  <div class="panel-heading">
+                    <h2>Yatırımcıdan pay al / sat</h2>
+                    <span id="ticket-symbol" class="symbol-tag">A</span>
+                  </div>
+                  <div class="side-toggle" role="group" aria-label="İşlem yönü">
+                    <button id="buy-button" class="active buy" data-side="buy">
+                      Alış</button
+                    ><button id="sell-button" class="sell" data-side="sell">
+                      Satış
+                    </button>
+                  </div>
+                  <form id="order-form">
+                    <fieldset>
+                      <legend class="sr-only">Emir tipi</legend>
+                      <div class="order-type-row">
+                        <label
+                          ><input
+                            type="radio"
+                            name="order-type"
+                            value="market"
+                            checked
+                          />
+                          Piyasa</label
+                        ><label
+                          ><input
+                            type="radio"
+                            name="order-type"
+                            value="limit"
+                          />
+                          Limit</label
+                        ><button
+                          id="order-help"
+                          type="button"
+                          class="help-dot"
+                          aria-label="Emir türlerini açıkla"
+                        >
+                          ?
+                        </button>
+                      </div>
+                    </fieldset>
+                    <label class="input-label" for="quantity"
+                      >Adet <span id="available-shares"></span
+                    ></label>
+                    <div class="input-container">
+                      <input
+                        id="quantity"
+                        type="number"
+                        min="1"
+                        step="1"
+                        inputmode="numeric"
+                        value="10"
+                        required
+                      /><span>pay</span>
+                    </div>
+                    <div class="quantity-shortcuts">
+                      <button type="button" data-quantity="10">10</button
+                      ><button type="button" data-quantity="50">50</button
+                      ><button type="button" data-quantity="100">100</button
+                      ><button type="button" data-quantity="max">Maks.</button>
+                    </div>
+                    <div id="limit-group" hidden>
+                      <label class="input-label" for="limit-price"
+                        >Limit fiyatı</label
+                      >
+                      <div class="input-container">
+                        <input
+                          id="limit-price"
+                          type="number"
+                          min="0.01"
+                          step="0.01"
+                          inputmode="decimal"
+                        /><span>TL</span>
+                      </div>
+                    </div>
+                    <div class="order-summary">
+                      <div>
+                        <span id="estimate-label">Tahmini tutar</span
+                        ><strong id="estimate-value">—</strong>
+                      </div>
+                      <div>
+                        <span>Kullanılabilir bakiye</span
+                        ><span id="available-balance">—</span>
+                      </div>
+                      <div><span>İşlem ücreti</span><span>₺0,00</span></div>
+                    </div>
+                    <p
+                      id="order-error"
+                      class="form-message error"
+                      role="alert"
+                      hidden
+                    ></p>
+                    <p
+                      id="order-success"
+                      class="form-message success"
+                      role="status"
+                      hidden
+                    ></p>
+                    <button
+                      id="submit-order"
+                      type="submit"
+                      class="button order-submit"
+                    >
+                      A payı al <span>↗</span>
+                    </button>
+                    <p class="order-disclaimer" id="order-note">
+                      Piyasa emri mevcut satış emirleriyle eşleşir. Fiyat ve
+                      gerçekleşen adet değişebilir.
+                    </p>
+                  </form>
+                </section>
+                <section class="panel scenario-panel">
+                  <div class="panel-heading">
+                    <h2>Şirket senaryoları</h2>
+                    <span class="tiny-label">SENARYO</span>
+                  </div>
+                  <p>
+                    Seçili girişime bir olay uygula; fiyat, nakit ve yatırımcı
+                    tepkisini izle.
+                  </p>
+                  <div class="scenario-buttons">
+                    <button data-scenario="growth">Büyüme haberi</button
+                    ><button data-scenario="panic">Satış paniği</button
+                    ><button data-scenario="crisis">Nakit krizi</button>
+                  </div>
+                </section>
+              </aside>
+            </div>
+            <section class="panel news-panel">
+              <div class="panel-heading">
+                <h2>Piyasa akışı</h2>
+                <span class="tiny-label">SİMÜLASYON HABERLERİ</span>
+              </div>
+              <div id="news-list" class="news-grid"></div>
+            </section>
+          </section>
+          <section id="portfolio-view" class="view-panel" hidden>
+            <div class="portfolio-layout">
+              <section class="panel">
+                <div class="panel-heading">
+                  <h2>Varlıklarım</h2>
+                  <span class="tiny-label">SANAL PAYLAR</span>
+                </div>
+                <div class="table-scroll">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Girişim</th>
+                        <th>Adet</th>
+                        <th>Ort. maliyet</th>
+                        <th>Son fiyat</th>
+                        <th>Piyasa değeri</th>
+                        <th>Kâr / Zarar</th>
+                      </tr>
+                    </thead>
+                    <tbody id="positions-body"></tbody>
+                  </table>
+                </div>
+                <div class="ownership-note">
+                  Piyasa değeri nakit kazanç değildir. Alıcı bulunursa satışla
+                  kazanç veya kayıp gerçekleşir; iflasta pay değeri sıfır
+                  olabilir.
+                  <div id="portfolio-stakes" class="portfolio-stakes"></div>
+                </div>
+                <div id="portfolio-empty" class="empty-state" hidden>
+                  <span>◫</span>
+                  <h3>İlk yatırımını keşfet</h3>
+                  <p>
+                    Bir girişime yeni sermaye yatırdığında ortaklık payların
+                    burada görünür.
+                  </p>
+                  <button class="button secondary" data-go="funding">
+                    Girişimleri keşfet ↗
+                  </button>
+                </div>
+              </section>
+              <section class="panel">
+                <div class="panel-heading">
+                  <h2>Açık emirler</h2>
+                  <span id="open-order-count" class="tiny-label"></span>
+                </div>
+                <div id="open-orders"></div>
+              </section>
+            </div>
+            <section class="panel ranking-panel">
+              <div class="panel-heading">
+                <h2>Sanal yatırımcı sıralaması</h2>
+                <span class="tiny-label">BOTLAR + SEN</span>
+              </div>
+              <p class="section-note">
+                Başlangıç sermayesine göre getiri. Botlar farklı risk ve
+                likidite tercihlerine sahiptir.
+              </p>
+              <div class="table-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Sıra</th>
+                      <th>Yatırımcı</th>
+                      <th>Toplam varlık</th>
+                      <th>Getiri</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ranking-body"></tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+          <section id="funding-view" class="view-panel">
+            <section class="capital-section" aria-labelledby="capital-title">
+              <div class="section-heading">
+                <div>
+                  <h2 id="capital-title">Sermaye izi</h2>
+                  <p>
+                    Bir girişim seç. Fon hedefine ne kadar yaklaştığını gör.
+                  </p>
+                </div>
+                <button class="text-button" data-show-guide>
+                  Yatırım nasıl çalışır?
+                  <svg class="ui-icon" aria-hidden="true">
+                    <use href="#i-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div
+                id="capital-trace"
+                class="capital-trace"
+                aria-label="Girişimlerin fonlama ilerlemesi"
+              ></div>
+            </section>
+            <div class="directory-heading">
+              <div>
+                <h2>Girişim dizini</h2>
+                <p>Ürün, ekip ve fon ihtiyacını birlikte değerlendir.</p>
+              </div>
+              <span id="campaign-result" role="status"></span>
+            </div>
+            <div class="campaign-filters">
+              <label class="search-field"
+                ><span class="sr-only">Girişim ara</span
+                ><svg class="ui-icon" aria-hidden="true">
+                  <use href="#i-search"></use></svg
+                ><input
+                  id="campaign-search"
+                  type="search"
+                  aria-label="Girişim ara"
+                  placeholder="Girişim, sektör veya ürün ara"
+                  autocomplete="off" /></label
+              ><label
+                ><span class="sr-only">Sektör</span
+                ><select id="campaign-sector" aria-label="Sektör">
+                  <option value="all">Tüm sektörler</option>
+                  <option>Yapay zekâ</option>
+                  <option>Temiz enerji</option>
+                  <option>Sağlık teknolojisi</option>
+                  <option>Finans teknolojisi</option>
+                  <option>Lojistik</option>
+                  <option>Oyun ve eğlence</option>
+                  <option>Tarım teknolojisi</option>
+                  <option>Uzay ve robotik</option>
+                </select></label
+              ><label
+                ><span class="sr-only">Sıralama</span
+                ><select id="campaign-sort" aria-label="Sıralama">
+                  <option value="symbol">Girişim adına göre</option>
+                  <option value="progress">Fonlama ilerlemesine göre</option>
+                  <option value="entry">En düşük pay tutarına göre</option>
+                </select></label
+              >
+            </div>
+            <div id="funding-grid" class="funding-grid"></div>
+            <div class="funding-notes">
+              <details class="return-explainer">
+                <summary>Pay değeri ile nakit kazanç arasındaki fark</summary>
+                <p>
+                  Payın piyasa değeri değişebilir; kazanç veya kayıp ancak karşı
+                  tarafta alıcı bulunup satış gerçekleştiğinde nakde döner.
+                  İflasta pay değeri sıfırlanabilir. Getiri ve satış garanti
+                  değildir.
+                </p>
+              </details>
+              <p class="campaign-footnote">
+                A–H girişimleri, ekipler ve risk etiketleri kurgu senaryo
+                verileridir. Bu alan sanal para ile çalışır; gerçek yatırım
+                hakkı vermez.
+              </p>
+            </div>
+          </section>
+          <section id="founder-view" class="view-panel" hidden>
+            <div class="founder-toolbar">
+              <label for="founder-symbol">Kurgu girişimin</label
+              ><select id="founder-symbol">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+                <option>G</option>
+                <option>H</option></select
+              ><span
+                >Fonlama kayıtları gerçek simülasyon işlemlerinden gelir.</span
+              >
+            </div>
+            <div id="founder-content"></div>
+          </section>
+          <section id="history-view" class="view-panel" hidden>
+            <section class="panel">
+              <div class="panel-heading">
+                <h2>İşlem geçmişim</h2>
+                <span class="tiny-label">FONLAMA + PAY ALIM SATIMI</span>
+              </div>
+              <div class="table-scroll">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Gün</th>
+                      <th>Girişim</th>
+                      <th>İşlem</th>
+                      <th>Adet</th>
+                      <th>Fiyat</th>
+                      <th>Tutar</th>
+                    </tr>
+                  </thead>
+                  <tbody id="history-body"></tbody>
+                </table>
+              </div>
+              <div id="history-empty" class="empty-state" hidden>
+                <span>≋</span>
+                <h3>Henüz işlem yok</h3>
+                <p>Gerçekleşen alış, satış ve fonlamaların burada görünür.</p>
+              </div>
+            </section>
+          </section>
+          <footer class="page-footer">
+            <span
+              >VentureX <span class="footer-separator">/</span> Girişim yatırımı
+              simülasyonu</span
+            ><span
+              >Sanal para · Getiri garanti değildir · Gerçek yatırım hakkı
+              vermez.</span
+            ><span id="save-status">Yerel kayıt açık</span>
+          </footer>
+        </div>
+      </main>
+    </div>
+    <p id="chart-keyboard-help" class="sr-only">
+      Grafikte sol ve sağ yön tuşlarıyla günleri incele. Home ilk güne, End son
+      güne gider.
+    </p>
+    <div id="chart-readout" class="sr-only" aria-live="polite"></div>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <dialog id="app-dialog" aria-labelledby="dialog-title">
+      <div id="dialog-content"></div>
+      <button
+        id="dialog-close"
+        class="dialog-close icon-button"
+        aria-label="Pencereyi kapat"
+      >
+        ×
+      </button>
+    </dialog>
+    <script src="engine.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

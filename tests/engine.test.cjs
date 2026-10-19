@@ -2,6 +2,29 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const { VentureEngine } = require("../dist/engine.js");
 
+test("Tek geçişli JSON kaydı eski biçimle aynıdır ve geri yüklenebilir", () => {
+  const engine = new VentureEngine(42);
+  engine.advance(5);
+  for (const space of [0, 2]) {
+    const encoded = engine.exportJSON(space);
+    assert.equal(encoded, JSON.stringify(engine.serialize(), null, space));
+    const restored = VentureEngine.fromJSON(encoded);
+    assert.deepEqual(restored.serialize(), engine.serialize());
+    assert.equal(restored.audit().ok, true);
+  }
+});
+
+test("Nesne kaydı canlı motoru değiştiremez; JSON dışa aktarma salt okunurdur", () => {
+  const engine = new VentureEngine(42);
+  const before = JSON.stringify(engine.serialize());
+  const detached = engine.serialize();
+  detached.accounts[0].cash = 0;
+  detached.startups[0].price = 1;
+  detached.orders.length = 0;
+  assert.equal(engine.exportJSON(), before);
+  assert.equal(JSON.stringify(engine.serialize()), before);
+});
+
 // Para tutarları kuruştur. Küçük, sabit fiyatlar eşleşme kurallarını
 // rastgele piyasa hareketlerinden bağımsız sınamamızı sağlar.
 function fixture(seed = 20261013) {

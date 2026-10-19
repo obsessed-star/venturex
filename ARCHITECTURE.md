@@ -43,6 +43,8 @@ The compatibility fixture covers the previous save version. No migration silentl
 
 ## Interface
 
+`exportJSON()` serializes a temporary state wrapper directly, avoiding the JSON clone required by the public, detached `serialize()` API. Autosave and download use this path; state validation still runs on import. Rendering updates shared summary values and only the active workspace. View navigation always renders from the current engine, so hidden panels do not need updates on each simulation tick.
+
 The funding workspace uses one comparison list and one investment form for the selected startup. The capital trace and campaign rows share the same selection. The secondary market has a separate order ticket to keep funding distinct from investor-to-investor transfers.
 
 SVG charts support pointer inspection and keyboard navigation. Native buttons, inputs and dialogs provide keyboard behavior; selection controls expose `aria-pressed`, and dialogs use their heading as an accessible name. Responsive layouts keep the same operations available on smaller screens.

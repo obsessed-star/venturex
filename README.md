@@ -55,7 +55,13 @@ npm test
 npm run bundle
 ```
 
-The 24 engine tests cover matching priority, reservation and release, funding dilution, bankruptcy, deterministic replay, imported saves and a 365-day stress scenario. GitHub Actions runs syntax checks, tests and bundling on Node.js 22 and 24.
+The 26 engine tests cover matching priority, reservation and release, funding dilution, bankruptcy, deterministic replay, imported saves, detached snapshots, equivalent JSON exports and a 365-day stress scenario. GitHub Actions runs syntax checks, tests and bundling on Node.js 22 and 24.
+
+## Performance
+
+Persistence converts the engine directly to JSON in one pass. The object-based `serialize()` API still returns an independent snapshot. The interface redraws the active workspace and shared overview; opening another workspace renders its current state.
+
+Run `npm run benchmark` to compare both JSON paths on the same seeded market after 180 additional days. The recorded Node 24 run converted a 2.35 MB save in **9.101 ms**, compared with **26.702 ms** for the previous clone-and-stringify path (**2.93×**). Both outputs were byte-identical. The measurement uses five warm-ups and the median of 15 runs; it excludes storage writes and browser rendering. Results depend on the device and market size. See [the measurement](evidence/performance.json) and [benchmark source](tests/benchmark.cjs).
 
 ## Project layout
 

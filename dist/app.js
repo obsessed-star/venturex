@@ -142,7 +142,7 @@
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       try {
-        engine = window.VentureEngine.fromJSON(JSON.parse(raw));
+        engine = window.VentureEngine.fromJSON(raw);
       } catch (err) {
         let backedUp = false;
         try {
@@ -186,7 +186,7 @@
       return;
     }
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(engine.serialize()));
+      localStorage.setItem(STORAGE_KEY, engine.exportJSON());
       $("save-status").textContent = "Otomatik kaydedildi · Bu tarayıcı";
     } catch (_) {
       localAvailable = false;
@@ -907,15 +907,13 @@
     $("day-value").textContent = num(engine.day);
     $("legacy-notice").hidden = engine.version !== 1;
     renderOverview();
-    renderWatchlist();
-    renderChart();
-    renderDetails();
-    updateTicket();
-    renderNews();
-    renderPortfolio();
-    renderFunding();
-    renderFounder();
-    renderHistory();
+    // Hidden views are refreshed when opened, not on every simulation tick.
+    if (view === "market") {
+      renderWatchlist(); renderChart(); renderDetails(); updateTicket(); renderNews();
+    } else if (view === "portfolio") renderPortfolio();
+    else if (view === "funding") renderFunding();
+    else if (view === "founder") renderFounder();
+    else if (view === "history") renderHistory();
   }
   const viewCopy = {
     market: [
@@ -961,15 +959,7 @@
         el.dataset.view === view ? "page" : "false",
       );
     });
-    renderOverview();
-    if (view === "market") {
-      renderWatchlist();
-      renderChart();
-      renderDetails();
-      updateTicket();
-    }
-    if (view === "founder") renderFounder();
-    if (view === "funding") renderFunding();
+    render();
     window.scrollTo({ top: 0, behavior: "instant" });
   }
   function selectSymbol(symbol) {
@@ -1260,7 +1250,7 @@
   );
   $("save-button").addEventListener("click", () => {
     try {
-      const data = JSON.stringify(engine.serialize(), null, 2),
+      const data = engine.exportJSON(2),
         blob = new Blob([data], { type: "application/json" }),
         url = URL.createObjectURL(blob),
         link = document.createElement("a");
@@ -1395,7 +1385,6 @@
   window.addEventListener("beforeunload", persist);
   $("limit-price").value = (startup().price / 100).toFixed(2);
   switchView("funding");
-  render();
   persist();
   if (restoredError) toast(restoredError, true);
 })();

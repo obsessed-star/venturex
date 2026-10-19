@@ -880,8 +880,8 @@
         unrealizedPnl: sum(positions.map((p) => p.pnl)),
       };
     }
-    serialize() {
-      return clone({
+    _snapshot() {
+      return {
         version: this.version,
         seed: this.seed,
         day: this.day,
@@ -897,7 +897,15 @@
         orders: this.orders,
         trades: this.trades,
         news: this.news,
-      });
+      };
+    }
+    serialize() {
+      // Public object snapshots remain detached from the live engine.
+      return clone(this._snapshot());
+    }
+    exportJSON(space = 0) {
+      // Persistence needs a string, not a clone followed by another encoding.
+      return JSON.stringify(this._snapshot(), null, space);
     }
     static fromJSON(input) {
       let state;

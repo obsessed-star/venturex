@@ -1,0 +1,12 @@
+{
+  "measuredAt": "2026-10-19T09:16:47.229Z",
+  "mode": "same-engine JSON persistence comparison",
+  "node": "v24.19.0",
+  "scope": "Seed 42, 180 additional days, five warm-ups and median of 15 runs. Includes JSON conversion only; excludes disk/localStorage and UI rendering.",
+  "day": 240,
+  "bytes": 2348438,
+  "legacyMs": 26.702,
+  "directExportMs": 9.101,
+  "speedup": 2.93,
+  "identicalOutput": true
+}
